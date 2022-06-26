@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.crossLine01 {
+    width: 100%;
+    height: 1.5px;
+    background-color: #432163;
+    transform: rotate(-49.5deg) scale(0, 1);
+    -webkit-transform: rotate(-49.5deg) scale(0, 1);
+    transform-origin: right;
+    -webkit-transform-origin: right;
+    position: absolute;
+    top: 37%;
+    right: 1px;
+    animation-name: crossLine01Animation;
+    animation-duration: 1.2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: crossLine01Animation;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes crossLine01Animation{
+0% {
+    transform: rotate(-49.5deg) scale(0, 1);
+}
+
+100% {
+    transform: rotate(-49.5deg) scale(1.6, 1);
+}
+}
